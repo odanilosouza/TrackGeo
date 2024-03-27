@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DeviceController;
+use App\Http\Controllers\VehicleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
