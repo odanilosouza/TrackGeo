@@ -1,66 +1,52 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Projeto de Sistema de Geolocalização: "GeoTrack"
+Visão Geral:
+O projeto "GeoTrack" visa desenvolver um sistema de geolocalização robusto
+e preciso que permita aos usuários rastrear e compartilhar sua localização
+em tempo real, além de oferecer recursos adicionais, como geocodificação
+reversa, busca de pontos de interesse e rotas personalizadas.
+Funcionalidades Principais:
+● Rastreamento em Tempo Real: Permitir aos usuários compartilhar sua
+localização em tempo real de veículos.
+● Cálculo de distâncias: Calcula as rotas realizadas por determinado
+dispositivo.
+● Classificação dos veículos: Deve ser possível a classificação dos
+veículos
+● Vínculo com motorista: Deve ser possível do veículo com o motorista.
+Arquitetura do Sistema:
+● Frontend: Desenvolvimento de aplicativos móveis (para Android) e uma
+interface web responsiva para acesso a partir de navegadores para
+consulta web.
+● Backend: Utilização de servidores escaláveis e seguros para
+processamento de dados de localização, gerenciamento de usuários e
+comunicação em tempo real.
+● Banco de Dados: Armazenamento seguro e eficiente de dados de
+localização, preferências do usuário e informações de pontos de
+interesse.
+Segurança:
+● Implementação de protocolos de segurança robustos, como HTTPS
+para comunicação segura entre o cliente e o servidor.
+● Autenticação de usuário utilizando tokens JWT (JSON Web Tokens).
+● Restrição de acesso aos dados de localização somente para usuários
+autorizados.
+Escalabilidade e Desempenho:
+● Utilização de serviços em nuvem escaláveis, como AWS ou Google
+Cloud Platform, para garantir desempenho consistente mesmo em
+períodos de alta demanda.
+● Serviço de Métricas: Implementação de um serviço para coletar e
+analisar métricas de desempenho e Qualidade de Serviço (QoS), como
+tempo de resposta da API, taxa de erro, disponibilidade do serviço, etc.,
+utilizando ferramentas como Prometheus e Grafana.
+● Otimização de consultas de banco de dados e uso de caching para
+acelerar o acesso aos dados.
+Testes e Manutenção:
+● Implementação de testes automatizados para garantir a qualidade do
+código e a estabilidade do sistema.
+● Monitoramento contínuo da infraestrutura e dos serviços para
+identificar e corrigir problemas rapidamente.
+● Atualizações regulares para adicionar novos recursos, melhorar a
+usabilidade e corrigir falhas de segurança.
+O projeto "GeoTrack" tem como objetivo oferecer uma solução completa e confiável
+para rastreamento e geolocalização, garantindo segurança, privacidade e
+desempenho para seus usuários.
+A estimativa é de 100 veículos. Os dados devem ser sincronizados a cada 30 segundos.
+Normalmente um veículo opera por 8 horas.
