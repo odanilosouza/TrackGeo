@@ -49,4 +49,3 @@ O projeto "GeoTrack" tem como objetivo oferecer uma solução completa e confiá
 para rastreamento e geolocalização, garantindo segurança, privacidade e
 desempenho para seus usuários.
 A estimativa é de 100 veículos. Os dados devem ser sincronizados a cada 30 segundos.
-Normalmente um veículo opera por 8 horas.
