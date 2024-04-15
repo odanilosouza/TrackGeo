@@ -24,9 +24,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('vehicles', [VehicleController::class,'index'])->name('vehicles.index');
 // Route::post('vehicles', [VehicleController::class,'store'])->name('vehicles.store');
 
-
-Route::post('/suppots', [SupportController::class, 'store'])->name('suppors.store');
 Route::get('/supports/create', [SupportController::class, 'create'])->name('supports.create');
+Route::get('/supports/{id}', [SupportController::class, 'show'])-> name('supports.show');
+Route::post('/suppots', [SupportController::class, 'store'])->name('suppors.store');
 Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
 
 Route::get('/', function () {
